@@ -104,9 +104,9 @@
                       <form id="bulk-form">
                         <h3>Insert Bulk Amount Email Addresses</h3>
                         <textarea placeholder="Maximum 20 Email for Free Version" type="email" class="form-control"
-                                  id="exampleInputEmail1" rows="4"></textarea>
+                                  [(ngModel)]="emails" rows="4" name="emails"></textarea>
 
-                        <button type="submit">Check</button>
+                        <button type="submit" (click)="bulkEmail(emails)">Check</button>
                       </form>
                     </div>
 
@@ -119,25 +119,11 @@
                           <th>Status</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                          <td></td>
-                          <td></td>
-
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
+                        <tbody *ngIf="bulkResult">
+                        <tr *ngFor="let em of emailList" style="">
+                          <td>{{em.temail}}</td>
+                          <td *ngIf="em.tresult == 1"> <span style="background-color: #097969; border-radius: 5px; padding: 5px; color: #FFFFFF">Vaild</span> </td>
+                          <td *ngIf="em.tresult == 2"> <span style="background-color: #880808; border-radius: 5px; padding: 5px; color: #FFFFFF">Worng</span> </td>
 
                         </tr>
 
@@ -167,13 +153,13 @@
                         <div class="container">
                           <div class="row">
                             <div class="email-box">
-                              <form class="" id="email-f">
-                                <input type="text" placeholder="First Name">
-                                <input type="text" placeholder="Last Name">
-                                <input type="text" placeholder="Domain">
+                              <form class="" id="email-f" #byname="ngForm">
+                                <input type="text" placeholder="First Name" name="firstName" ngModel>
+                                <input type="text" placeholder="Last Name" name="lastName" ngModel>
+                                <input type="text" placeholder="Domain" name="domain" ngModel>
 
                                 <br>
-                                <button class="mt-3" type="submit">Check</button>
+                                <button class="mt-3" type="submit" (click)="byName()">Check</button>
                               </form>
                             </div>
                             <div class="email-table">
@@ -184,10 +170,10 @@
                                   <th>Status</th>
                                 </tr>
                                 </thead>
-                                <tbody>
-                                <tr>
-                                  <td></td>
-                                  <td></td>
+                                <tbody *ngIf="buNStatus">
+                                <tr *ngFor="let x of vaildEmail">
+                                  <td>{{x.confirmEmail}}</td>
+                                  <td *ngIf="x.resultEmail == 1"> <span style="background-color: #097969; border-radius: 5px; padding: 5px; color: #FFFFFF">Email Found</span> </td>
 
                                 </tr>
                                 </tbody>

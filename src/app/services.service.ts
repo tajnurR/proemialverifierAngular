@@ -15,4 +15,12 @@ export class ServicesService {
   getSingleTest(email: string){
     return this.http.get<any>(baseURL+"/single_email/"+email);
   }
+
+  getBuilkEmail(emaillist: string){
+    return this.http.get<any>(baseURL+"/bulk_test/"+emaillist);
+  }
+
+  getByName(byname: any){
+    return this.http.patch(baseURL+"/byname", byname);
+  }
 }
