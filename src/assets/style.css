@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden!important;
+    background: #EDFAFF;
+    
+}
+/* ----------------- */
+
+.header-area{
+ /*   background-image: linear-gradient( #69B7FF , #EDFAFF);        */
+    background-color: #90DEFF;
+}
+
+img.logo {
+    cursor: pointer;
+    width: 100px;
+    box-shadow: border-box;
+
+}
+
+.menu-item li a{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 30px;
+    padding: 8px;
+    transition: 0.25s;
+}
+
+.menu-item li a:hover{
+    color: ;
+    background-color: #46b0dd;
+
+}
+
+
+.dropdown-menu{
+    background-color: transparent!important;
+    box-shadow: 5px 5px 5px 5px #555;
+    border: none;
+}
+.menu-item li button{
+    text-decoration: none!important;
+}
+
+nav .user{
+    float: right;
+    cursor: pointer;
+   
+}
+nav .user img{
+    width: 35px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/*------------------ Accordion Area Start -----------------*/
+
+input{
+    border-radius: 5px;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px ;
+    border:  1px solid #555;
+    border-width: 2px;
+    transition: 0.25s;
+
+}
+button:hover{
+    scale: 1.1;
+    background-color: #90DEFF;
+}
+
+
+.card{
+    transition: 0.25s ease-in-out;
+}
+.card:hover {
+    scale: 1.1;
+    background-color:#90DEFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #FFF  !important;
+    background-color: #5500C9 !important;
+  }
+
+
+/* -----main-div-area----- */
+.main-div{
+    min-height: 500px;
+    margin: 50px 0;
+}
+
+.card a{
+    color: #555 ;
+    text-decoration: none;
+}
+.card_active{
+    color: #555 ;
+    background-color: #90DEFF;
+}
+.card a:hover{
+    color: #555 ;
+    text-decoration: none;
+}
+
+.accordion-details{
+    margin-top: 50px;
+}
+.accordion-item {  /***** Overwriting Bootstrap Class ********/
+    border: none;
+    box-shadow: 0px 0px 5px  #90DEFF  ;
+}
+
+.email-box form{
+    /* width: 80%; */
+}
+.email-box form input{
+   padding: 10px;
+   margin: 10px 1px;
+   border:  1px solid #555;
+   border-width: 2px;
+}
+.email-box form button{
+
+}
+
+.email-table table {
+    /* width: 80%; */
+    border-width: 3px 0!important;
+    border:  1px solid #555;
+   
+}
+.email-table td {
+   
+    text-align: left;
+    padding: 12px;
+  }
+  /* ---------------------bulk-page-form-area------------------- */
+  #bulk-form textarea{
+    width: 100%;
+    border: 1px solid #555;
+    min-height: 250px!important;
+  }
+/* --------------------Email-Finder-page-form-area-------------------- */
+#email-f input{
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: italic;
+    font-size: 20px;
+}
+#email-f input{
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: italic;
+    font-size: 20px;
+}
+/* --------------------Account-page-area----------------------- */
+.right-form img{
+    border-radius: 50%;
+    width: 125px;
+    height: 165px;
+    display: block;
+}
+.user-img{
+    display: flex;
+    padding-bottom:20px;
+}
+.user-img p{
+    margin: 50px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    border:1px solid #69B7FF;
+}
+.right-form form{
+    border-radius: 30px;
+}
+
+
+
+
+/* 
+.sidebar-area{
+    position: relative;
+    display: block;
+    background-color: antiquewhite;
+    height: 100%;
+    padding-top: 150px;
+    
+}
+
+.sidebar-area a{
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    margin-top: 20px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-image: linear-gradient(to top left, #90DEFF ,#fff);
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+.content-area{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.content-area button{
+    padding: 2px 18px;
+    border:  1px solid #69B7FF;
+    border-radius: 15px;
+    margin-top: 5px;
+    
+} */
+/* --------------------index-page-form-area----------------- */
+
+
+
+
+/* --------------------index-page-form-area----------------- */
+
+/* ---------footer-area------------- */
+footer{
+background-color: #ccc;
+   
+}
+footer a, p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+footer li{
+    list-style: none;
+    float: left;
+
+}
+
+  /* -------------------- */
+
+.social-area{
+    float: right;
+    cursor: pointer;
+}
+ .social-area ul li a i:hover{
+    color: #69B7FF ;
+}
+
+
+
+.privacy-area a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.25s;
+}
+.privacy-area a:hover{
+    text-decoration: dashed;
+    color: #69B7FF ;
+}
+.social-area ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 35px;
+    padding-right: 15px;
+    
+}
+.social-area i{
+    transition: 0.25s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+	body{
+		overflow-x: hidden;
+	}
+	
+   .logo{
+        width: 100px;
+    }
+	.menu-item{
+        padding: 25px;
+    }
+    /* ----------- */
+    /* -------------- */
+   .user{
+        display: none;
+    }
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+    .sidebar-area{
+        padding: 15px;
+    }
+    .sidebar-area a{
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 120px;
+        font-size: 15px;
+        
+    }
+}
